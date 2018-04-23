@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="3">
+                
+                <h:outputLabel value="Username"></h:outputLabel>
+                <h:outputLabel value=":"></h:outputLabel>
+                <h:inputText value="#{student.username}"></h:inputText>
+                
+                 <h:outputLabel value="Password"></h:outputLabel>
+                <h:outputLabel value=":"></h:outputLabel>
+                <h:inputText value="#{student.password}"></h:inputText>
+                
+                <h:commandButton value="Insert" action="#{student.loginAction()}"></h:commandButton>
+            </h:panelGrid>
+            <h:outputText value="#{student.message}"></h:outputText>
+        </h:form>
+    </h:body>
+</html>
+
